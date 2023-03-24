@@ -17,6 +17,7 @@
 ## Checklist
 * 입력 데이터의 Validation을 웹 프론트엔드에서 했더라도 서버에서 또 해야 할까요? 그 이유는 무엇일까요?
   * 서버로부터 받은 HTML 내용을 그대로 검증 없이 프론트엔드에 innerHTML 등을 통해 적용하면 어떤 문제점이 있을까요?
+  > innerHTML 프로퍼티의 값을 변경하면 innerHTML 프로퍼티를 호출한 노드를 삭제 후 재구성합니다. 복잡한 HTML 문서에서는 노드를 재구성하는 데 시간이 많이 걸리고 의도하지 않은 부작용이 발생할 수 있습니다.
   * XSS(Cross-site scripting)이란 어떤 공격기법일까요?
   * CSRF(Cross-site request forgery)이란 어떤 공격기법일까요?
   * SQL Injection이란 어떤 공격기법일까요?
